@@ -1,14 +1,14 @@
 {
-  "name": "webpack-intro",
+  "name": "beacon",
   "version": "1.0.0",
-  "description": "",
+  "description": "NSS Cohort 13: Group Project 2",
   "main": "src/javascripts/main.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production --module-bind js=babel-loader"
   },
   "keywords": [],
-  "author": "",
+  "author": "Autumn F., Jordan S., Bailey D., Chris C.",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "7.11.4",
