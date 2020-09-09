@@ -1,5 +1,5 @@
 # Chatty
-
+Dummy text to make merge work
 ## Setup
 
 Every teammate copy and run the following commands in the host machine terminal.
