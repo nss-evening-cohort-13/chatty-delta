@@ -1,11 +1,13 @@
 import '../styles/main.scss';
-import SeedData from './helpers/data/messageData';
+// import SeedData from './helpers/data/messageData';
+import themes from './components/modes';
+import container from './components/options-container';
 import multipleUsers from './components/multipleUsers';
 
 const init = () => {
-  $('#app').html('<h1>HELLO! You are up and running!</h1>');
-  console.log('YOU ARE UP AND RUNNING!');
-  console.log(SeedData.getInitialMessages());
+  container.containerDom();
+  themes.themeDom();
+  themes.themeChange();
   multipleUsers.dropDown();
 };
 
