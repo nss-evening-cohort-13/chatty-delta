@@ -1,5 +1,6 @@
 import userData from '../helpers/data/userData';
 
+// displays the name in the choose character button;
 const clicky = () => {
   $('.dropdown-menu button').click(function click() {
     $('#dropdown-button').text($(this).text());
