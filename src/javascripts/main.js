@@ -6,16 +6,11 @@ import multipleUsers from './components/multipleUsers';
 import navigation from './components/navigation';
 
 const init = () => {
-
-  console.warn(SeedData.getInitialMessages());
-
   container.containerDom();
   themes.themeDom();
   themes.themeChange();
-
   multipleUsers.dropDown();
   navigation.renderNavBar();
-  navigation.initalButtonClick();
 };
 
 init();
