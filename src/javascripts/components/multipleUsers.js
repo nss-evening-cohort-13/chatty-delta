@@ -1,5 +1,11 @@
 import userData from '../helpers/data/userData';
 
+const clicky = () => {
+  $('.dropdown-menu button').click(function click() {
+    $('#dropdown-button').text($(this).text());
+  });
+};
+
 const dropDown = () => {
   const character = userData.getUsers();
   const domString = `
@@ -8,15 +14,16 @@ const dropDown = () => {
     Choose Character
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" id="dropdown-samwise">${character[0].name}</a>
-    <a class="dropdown-item" id="dropdown-legolas">${character[1].name}</a>
-    <a class="dropdown-item" id="dropdown-frodo">${character[2].name}</a>
-    <a class="dropdown-item" id="dropdown-gandalf">${character[3].name}</a>
-    <a class="dropdown-item" id="dropdown-gollum">${character[4].name}</a>
+    <button class="dropdown-item" id="dropdown-select">${character[0].name}</button>
+    <button class="dropdown-item" id="dropdown-select">${character[1].name}</button>
+    <button class="dropdown-item" id="dropdown-select">${character[2].name}</button>
+    <button class="dropdown-item" id="dropdown-select">${character[3].name}</button>
+    <button class="dropdown-item" id="dropdown-select">${character[4].name}</button>
   </div>
 </div>
     `;
   $('#user-select').html(domString);
+  clicky();
 };
 
 export default { dropDown };
