@@ -17,8 +17,4 @@ const renderNavBar = () => {
   return domString;
 };
 
-const initalButtonClick = () => {
-  document.querySelector('body').addEventListener('click', renderNavBar);
-};
-
-export default { renderNavBar, initalButtonClick };
+export default { renderNavBar };
