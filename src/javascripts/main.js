@@ -3,6 +3,7 @@ import '../styles/main.scss';
 import modes from './components/modes';
 import container from './components/options-container';
 import multipleUsers from './components/multipleUsers';
+import displayMessages from './components/displayMessages';
 import navigation from './components/navigation';
 
 const init = () => {
@@ -11,6 +12,7 @@ const init = () => {
   modes.themeChange();
   modes.fontChange();
   multipleUsers.dropDown();
+  displayMessages.displayDummy();
   navigation.renderNavBar();
 };
 
