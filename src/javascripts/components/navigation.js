@@ -3,7 +3,7 @@ const renderNavBar = () => {
     <div class="fixed-top">
         <nav class="navbar navbar-light bg-light">
             <a class="navbar-brand" href="#">
-            <img src="./src/images/logolotr.png" width="50" height="50" class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="./images/logo.jpg" width="90" height="90" class="d-inline-block align-top" alt="" loading="lazy">
           </a>
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="text" placeholder="Enter message..." aria-label="Search">
