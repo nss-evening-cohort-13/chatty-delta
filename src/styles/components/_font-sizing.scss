@@ -1,0 +1,13 @@
+//card-character, <h5> class, char name
+//card-quote, <p> class, written text.
+
+$large-font-size: 2rem;
+// LARGE FONT RULES
+.larger {
+  .card-character {
+      font-size: $large-font-size;
+  }
+  .card-quote {
+      font-size: $large-font-size;
+  }
+};
