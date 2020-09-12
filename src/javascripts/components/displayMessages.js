@@ -4,7 +4,7 @@ const messageDummy = (item) => {
   const domString = `
     <div class="card" style="width: 18rem;">
     <div class="card-body">
-    <div class="dummy"
+    <div class="dummy">
       <h5 class="card-character">${item.character}</h5>
       <p class="card-quote">${item.quote}</p>
       <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete Message</button>
