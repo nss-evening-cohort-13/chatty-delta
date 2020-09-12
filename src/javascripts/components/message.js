@@ -1,19 +1,18 @@
 import Data from '../helpers/data/messageData';
+import Display from './displayMessages';
 
 // Add message
 const addMessage = () => {
   $('#submit-message').on('click', () => {
     const newId = Data.getInitialMessages().length + 1;
     const userMessage = $('#input-message').val();
-    console.log(`newId: ${newId}, userMessage: ${userMessage}`);
+    const userName = $('input:checked + label').text();
     Data.getInitialMessages().push({
       id: newId,
       quote: userMessage,
-      // name: $('Gollem').html(),
-      character: 'Gollum',
+      character: userName,
     });
-    console.log(Data.getInitialMessages());
-    // $('#input-message').reset();
+    Display.displayDummy();
   });
 };
 
