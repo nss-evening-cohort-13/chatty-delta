@@ -1,0 +1,40 @@
+.font-mode {
+  text-align: left;
+  font-weight: bold;
+  color: $font-color-dark;
+  padding-left: 10px;
+  .font-change {
+    cursor: pointer;
+    border: 1px solid $font-color-dark;
+    border-radius: 40%;
+    width: 65px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+    color: $font-color-dark;
+    margin-top: 10px; 
+    display: inline-block;
+  }
+}
+
+// DARK MODE RULES
+.dark {
+  background-image: $darkBG;
+  .font-change {
+    cursor: pointer;
+    border: 1px solid $font-color-bright;
+    border-radius: 40%;
+    width: 65px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+    color: $font-color-bright;
+    margin-top: 10px; 
+    display: inline-block;
+  }
+  .font-mode {
+    text-align: left;
+    font-weight: bold;
+    color: $font-color-bright;
+  }
+}
