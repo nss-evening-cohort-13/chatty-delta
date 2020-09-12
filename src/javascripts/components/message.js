@@ -12,6 +12,7 @@ const addMessage = () => {
       quote: userMessage,
       character: userName,
     });
+    $('#load-messages').html('');
     Display.displayDummy();
   });
 };
