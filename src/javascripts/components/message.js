@@ -17,4 +17,11 @@ const addMessage = () => {
   });
 };
 
-export default { addMessage };
+// Delete message
+const deleteMessage = () => {
+  $('#delete-message').on('click', () => {
+    console.log('delete me');
+  });
+};
+
+export default { addMessage, deleteMessage };
