@@ -19,8 +19,15 @@ const addMessage = () => {
 
 // Delete message
 const deleteMessage = () => {
-  $('#delete-message').on('click', () => {
-    console.log('delete me');
+  $('body').on('click', 'button', (e) => {
+    const arr = e.target.id.split('-');
+    if (arr[0] === 'delete') {
+      const index = Data.getInitialMessages().findIndex(
+        (message) => message.id === arr[1]
+      );
+      Data.removeMessage(index);
+      $(`#card-${arr[1]}`).remove();
+    }
   });
 };
 
