@@ -1,13 +1,29 @@
-Chatty-Delta
+#Chatty-Delta
 
-A one page application that allows users to select a character and send messages 
+An application that allows Lord of the Ring fans to select a character and send messages to eachother.
 
 
-Features
+##Features
 
--User can select character from drop down menu 
--User can choose light or dark mode for easy viewing
--User can select large text to increase the size of the text
--There is a button to clear all messages, and a button to delete a certain message
--Can add new messages
+-The user can select character from drop down menu 
+-The user can choose light or dark mode for easy viewing
+-The user can select large text to increase the size of the text
+- Ability to clear all messages, and to delete a certain message
+-Ability to add a new message
 -Only 20 messages will show at a time 
+
+##Contributors
+[Jordan Smith](https://github.com/JSmith989)
+[Bailey Dennie](https://github.com/BaileyEDennis)
+[Chris Calhoun](https://github.com/chris-calhoun)
+[Autumn Fotopoulos](https://github.com/AutumnFoto)
+
+#Teach Used
+
+-JQuery
+-SASS
+-Javascript ES6
+
+#Deployed here
+
+
