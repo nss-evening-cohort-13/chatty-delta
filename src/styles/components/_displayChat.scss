@@ -2,3 +2,16 @@
     display: flex;
     flex-direction: column-reverse;
 };
+
+.card {
+    opacity: 93.5%;
+}
+
+.dark {
+    background-image: $darkBG;
+    .card {
+        background-color: rgb(202, 202, 202);
+        opacity: 93.5%;
+        color: white;
+    }
+}
