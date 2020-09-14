@@ -17,6 +17,7 @@ const init = () => {
   navigation.renderNavBar();
   Message.addMessage();
   modes.clearChange();
+  Message.deleteMessage();
 };
 
 init();

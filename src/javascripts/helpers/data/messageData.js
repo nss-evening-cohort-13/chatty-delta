@@ -31,4 +31,8 @@ const initialMessages = [
 
 const getInitialMessages = () => initialMessages;
 
-export default { getInitialMessages };
+const removeMessage = (id) => {
+  initialMessages.splice(id - 1, 1);
+};
+
+export default { getInitialMessages, removeMessage };
