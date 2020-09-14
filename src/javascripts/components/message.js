@@ -1,3 +1,4 @@
+import moment from 'moment';
 import Data from '../helpers/data/messageData';
 import Display from './displayMessages';
 
@@ -7,10 +8,13 @@ const addMessage = () => {
     const newId = Data.getInitialMessages().length + 1;
     const userMessage = $('#input-message').val();
     const userName = $('input:checked + label').text();
+    const time = moment().format('MMMM Do YYYY, h:mm:ss a');
+    console.error(time);
     Data.getInitialMessages().push({
       id: newId,
       quote: userMessage,
       character: userName,
+      time
     });
     $('#load-messages').html('');
     Display.displayDummy();
