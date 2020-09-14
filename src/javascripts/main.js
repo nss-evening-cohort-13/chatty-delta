@@ -5,6 +5,7 @@ import container from './components/options-container';
 import multipleUsers from './components/multipleUsers';
 import displayMessages from './components/displayMessages';
 import navigation from './components/navigation';
+import Message from './components/message';
 
 const init = () => {
   container.containerDom();
@@ -14,6 +15,8 @@ const init = () => {
   multipleUsers.dropDown();
   displayMessages.displayDummy();
   navigation.renderNavBar();
+  Message.addMessage();
+  Message.deleteMessage();
 };
 
 init();
