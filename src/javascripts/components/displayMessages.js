@@ -1,6 +1,12 @@
 import messageData from '../helpers/data/messageData';
 
 const messageDummy = (item) => {
+  // const time = new Date();
+  // const hours = time.getHours();
+  // const minutes = time.getMinutes();
+  // const date = time.getDate();
+  // const month = time.getMonth() + 1;
+  // const year = time.getFullYear();
   const domString = `
     <div id="card-${item.id}" class="card" style="width: 18rem;">
     <div class="card-body">
