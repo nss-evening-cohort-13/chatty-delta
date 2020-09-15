@@ -1,3 +1,5 @@
+import messageData from '../helpers/data/messageData';
+
 const themeDom = () => {
   const domString = `
   <div class="mode">
@@ -10,6 +12,12 @@ const themeDom = () => {
     <div class="item-two">
       <i class="fas fa-text-height"></i> Font Size: 
       <span class="font-change">LARGE</span>
+    </div>
+  </div>    
+  <div class="clear-mode">
+    <div class="item-three">
+    <i class="fas fa-user-slash"></i></i> Clear Chat: 
+      <span class="clear-change">CLEAR</span>
     </div>
   </div>    
       `;
@@ -40,4 +48,20 @@ const fontChange = () => {
   });
 };
 
-export default { themeDom, themeChange, fontChange };
+const clearChange = () => {
+  $('.clear-change').click(() => {
+    if (messageData.getInitialMessages().length === 0) {
+      document.getElementsByClassName('clear-change')[0].setAttribute('disabled', true);
+    } else {
+      $('#load-messages').empty();
+      messageData.getInitialMessages().length = 0;
+    }
+  });
+};
+
+export default {
+  themeDom,
+  themeChange,
+  fontChange,
+  clearChange,
+};
