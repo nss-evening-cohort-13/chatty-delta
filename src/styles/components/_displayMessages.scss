@@ -1,0 +1,12 @@
+.msgBox{
+    width: 90%;
+  display:flex;
+  display: space-between;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-left: 2em;
+  padding: .2rem;
+  border-radius: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
