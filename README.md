@@ -19,7 +19,7 @@ An application that allows Lord of the Ring fans to select a character and send 
 * [Chris Calhoun](https://github.com/chris-calhoun)
 * [Autumn Fotopoulos](https://github.com/AutumnFoto)
 
-### Teach Used
+### Tech Used
 
 * JQuery
 * SASS
