@@ -16,6 +16,7 @@ const init = () => {
   displayMessages.displayDummy();
   navigation.renderNavBar();
   Message.initMessage();
+  modes.clearChange();
 };
 
 init();
