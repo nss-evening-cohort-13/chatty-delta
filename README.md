@@ -2,6 +2,7 @@
 
 An application that allows Lord of the Ring fans to select a character and send messages to eachother.
 
+![](Animated%20GIF-downsized.gif)
 
 ##Features
 
