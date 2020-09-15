@@ -18,7 +18,8 @@ const messageDummy = (item) => {
 
 const displayDummy = () => {
   const message = messageData.getInitialMessages();
-  message.forEach((item) => {
+  message.slice(-20).forEach((item) => {
+  // message.forEach((item) => {
     $('#load-messages').append(messageDummy(item));
   });
 };
