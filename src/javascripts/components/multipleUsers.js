@@ -30,7 +30,7 @@ import userData from '../helpers/data/userData';
 const dropDown = () => {
   const character = userData.getUsers();
   const domString = `
-  <div class="dropdown">
+  <div class='dropdown'>
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdown-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Choose Character
   </button>
@@ -58,7 +58,7 @@ const dropDown = () => {
   </div>
 </div>
     `;
-  $('#user-select').html(domString);
+  $('#dropMenu').html(domString);
   // clicky();
 };
 
