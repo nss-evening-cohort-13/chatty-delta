@@ -13,9 +13,10 @@ const addMessage = () => {
       id: newId,
       quote: userMessage,
       character: userName,
-      time
+      time,
     });
     $('#load-messages').html('');
+    $('#input-message').val('');
     Display.displayDummy();
   });
 };
@@ -34,4 +35,20 @@ const deleteMessage = () => {
   });
 };
 
-export default { addMessage, deleteMessage };
+// Add message on "enter"
+const enterMessage = () => {
+  $('#input-message').on('keypress', (e) => {
+    if (e.which === 13) {
+      e.preventDefault();
+      $('#submit-message').trigger('click');
+    }
+  });
+};
+
+const initMessage = () => {
+  addMessage();
+  deleteMessage();
+  enterMessage();
+};
+
+export default { initMessage };
