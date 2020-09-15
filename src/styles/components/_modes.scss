@@ -7,8 +7,11 @@ body {
   padding: 10% 3% 10% 3%;
   text-align: center;
   background-image: $lightBG;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
 }
-
 
 // LIGHT MODE RULES
 .mode {
@@ -25,7 +28,7 @@ body {
     padding: 5px;
     margin-left: 8px;
     color: $font-color-dark;
-    margin-top: 10px; 
+    margin-top: 10px;
     display: inline-block;
   }
 }
@@ -42,12 +45,16 @@ body {
     padding: 5px;
     margin-left: 8px;
     color: $font-color-bright;
-    margin-top: 10px; 
+    margin-top: 10px;
     display: inline-block;
   }
   .mode {
     text-align: left;
     font-weight: bold;
     color: $font-color-bright;
+  }
+  .card-body {
+    background-color: grey;
+    color: white;
   }
 }
