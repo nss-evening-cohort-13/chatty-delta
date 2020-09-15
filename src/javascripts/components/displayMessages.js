@@ -7,7 +7,7 @@ const messageDummy = (item) => {
     <div class="dummy">
       <h5 class="card-character">${item.character}</h5>
       <p class="card-quote">${item.quote}</p>
-      <button id="delete-${item.id}" type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete Message</button>
+      <button id="delete-${item.id}" type="button" class="delete-btn"><i class="far fa-trash-alt"></i> Delete Message</button>
       <p class="timeStamped">${item.time}</p>
       </div>
     </div>
