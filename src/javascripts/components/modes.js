@@ -49,12 +49,21 @@ const fontChange = () => {
 };
 
 const clearChange = () => {
-  $('.clear-change').click(() => {
-    $('#load-messages').empty();
-    messageData.getInitialMessages().length = 0;
-  });
+  if (messageData.getInitialMessages().length === 0) {
+    document.getElementsByClassName('clear-change')[0].setAttribute('disabled', true);
+    // $('.clear-change').text('EMPTY');
+    // $('.clear-change').attr('disabled', true);
+  } else {
+    $('.clear-change').click(() => {
+      $('#load-messages').empty();
+      messageData.getInitialMessages().length = 0;
+    });
+  }
 };
 
 export default {
-  themeDom, themeChange, fontChange, clearChange
+  themeDom,
+  themeChange,
+  fontChange,
+  clearChange,
 };
