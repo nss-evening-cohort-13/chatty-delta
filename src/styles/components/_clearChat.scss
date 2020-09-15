@@ -1,0 +1,39 @@
+.clear-mode {
+    text-align: left;
+    font-weight: bold;
+    color: $font-color-dark;
+    padding-left: 10px;
+    .clear-change {
+      cursor: pointer;
+      border: 1px solid $font-color-dark;
+      border-radius: 40%;
+      width: 65px;
+      text-align: center;
+      padding: 5px;
+      margin-left: 8px;
+      color: $font-color-dark;
+      margin-top: 10px; 
+      display: inline-block;
+    }
+  }
+  
+  .dark {
+    background-image: $darkBG;
+    .clear-change {
+      cursor: pointer;
+      border: 1px solid $font-color-bright;
+      border-radius: 40%;
+      width: 65px;
+      text-align: center;
+      padding: 5px;
+      margin-left: 8px;
+      color: $font-color-bright;
+      margin-top: 10px; 
+      display: inline-block;
+    }
+    .clear-mode {
+      text-align: left;
+      font-weight: bold;
+      color: $font-color-bright;
+    }
+  }
