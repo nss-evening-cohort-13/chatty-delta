@@ -1,7 +1,16 @@
 #navbarContainer {
-    overflow: hidden;
-    position: center fixed;
-    top: 0;
-    width: 100%;
-    background-color: transparent;
-};
+  overflow: hidden;
+  position: center fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.enter-message {
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  padding: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(168, 153, 120);
+}
