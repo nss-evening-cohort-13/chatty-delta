@@ -17,4 +17,34 @@ const addMessage = () => {
   });
 };
 
-export default { addMessage };
+// Delete message
+const deleteMessage = () => {
+  $('body').on('click', 'button', (e) => {
+    const arr = e.target.id.split('-');
+    if (arr[0] === 'delete') {
+      const index = Data.getInitialMessages().findIndex(
+        (message) => message.id === arr[1]
+      );
+      Data.removeMessage(index);
+      $(`#card-${arr[1]}`).remove();
+    }
+  });
+};
+
+// Add message on "enter"
+const enterMessage = () => {
+  $('#input-message').on('keyup', (e) => {
+    if (e.key === '13') {
+      e.preventDefault();
+      $('#submit-message').click();
+    }
+  });
+};
+
+const initMessage = () => {
+  addMessage();
+  deleteMessage();
+  enterMessage();
+};
+
+export default { initMessage };
