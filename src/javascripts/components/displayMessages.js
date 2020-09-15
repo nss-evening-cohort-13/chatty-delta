@@ -2,7 +2,7 @@ import messageData from '../helpers/data/messageData';
 
 const messageDummy = (item) => {
   const domString = `
-    <div id="card-${item.id}" class="card" style="width: 18rem;">
+    <div id="card-${item.id}" class="card msgBox" style="width: 25rem;">
     <div class="card-body">
     <div class="dummy">
       <h5 class="card-character">${item.character}</h5>
