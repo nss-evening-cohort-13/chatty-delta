@@ -21,9 +21,9 @@ An application that allows Lord of the Ring fans to select a character and send 
 
 ### Teach Used
 
--JQuery
--SASS
--Javascript ES6
+* JQuery
+* SASS
+* Javascript ES6
 
 ### Deployed here
 
