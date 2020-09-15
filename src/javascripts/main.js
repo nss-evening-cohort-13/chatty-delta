@@ -15,9 +15,8 @@ const init = () => {
   multipleUsers.dropDown();
   displayMessages.displayDummy();
   navigation.renderNavBar();
-  Message.addMessage();
+  Message.initMessage();
   modes.clearChange();
-  Message.deleteMessage();
 };
 
 init();
