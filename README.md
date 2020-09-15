@@ -27,4 +27,4 @@ An application that allows Lord of the Ring fans to select a character and send 
 
 ### Deployed here
 
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/73a0f7c7-7d0c-4381-8981-193605f1d4a5/deploy-status)](https://app.netlify.com/sites/chatty-delta/deploys)
