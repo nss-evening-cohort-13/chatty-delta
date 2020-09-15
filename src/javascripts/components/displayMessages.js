@@ -8,6 +8,7 @@ const messageDummy = (item) => {
       <h5 class="card-character">${item.character}</h5>
       <p class="card-quote">${item.quote}</p>
       <button id="delete-${item.id}" type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Delete Message</button>
+      <p class="timeStamped">${item.time}</p>
       </div>
     </div>
   </div>
@@ -17,7 +18,7 @@ const messageDummy = (item) => {
 
 const displayDummy = () => {
   const message = messageData.getInitialMessages();
-  message.forEach((item) => {
+  message.slice(-20).forEach((item) => {
     $('#load-messages').append(messageDummy(item));
   });
 };

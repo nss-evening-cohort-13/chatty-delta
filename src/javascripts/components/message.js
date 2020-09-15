@@ -1,3 +1,4 @@
+import moment from 'moment';
 import Data from '../helpers/data/messageData';
 import Display from './displayMessages';
 
@@ -7,12 +8,15 @@ const addMessage = () => {
     const newId = Data.getInitialMessages().length + 1;
     const userMessage = $('#input-message').val();
     const userName = $('input:checked + label').text();
+    const time = moment().format('MMMM Do YYYY, h:mm:ss a');
     Data.getInitialMessages().push({
       id: newId,
       quote: userMessage,
       character: userName,
+      time,
     });
     $('#load-messages').html('');
+    $('#input-message').val('');
     Display.displayDummy();
   });
 };
@@ -31,4 +35,20 @@ const deleteMessage = () => {
   });
 };
 
-export default { addMessage, deleteMessage };
+// Add message on "enter"
+const enterMessage = () => {
+  $('#input-message').on('keypress', (e) => {
+    if (e.which === 13) {
+      e.preventDefault();
+      $('#submit-message').trigger('click');
+    }
+  });
+};
+
+const initMessage = () => {
+  addMessage();
+  deleteMessage();
+  enterMessage();
+};
+
+export default { initMessage };
