@@ -49,16 +49,14 @@ const fontChange = () => {
 };
 
 const clearChange = () => {
-  if (messageData.getInitialMessages().length === 0) {
-    document.getElementsByClassName('clear-change')[0].setAttribute('disabled', true);
-    // $('.clear-change').text('EMPTY');
-    // $('.clear-change').attr('disabled', true);
-  } else {
-    $('.clear-change').click(() => {
+  $('.clear-change').click(() => {
+    if (messageData.getInitialMessages().length === 0) {
+      document.getElementsByClassName('clear-change')[0].setAttribute('disabled', true);
+    } else {
       $('#load-messages').empty();
       messageData.getInitialMessages().length = 0;
-    });
-  }
+    }
+  });
 };
 
 export default {
