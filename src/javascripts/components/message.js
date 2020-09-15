@@ -9,7 +9,7 @@ const addMessage = () => {
     const userMessage = $('#input-message').val();
     const userName = $('input:checked + label').text();
     const time = moment().format('MMMM Do YYYY, h:mm:ss a');
-    console.error(time);
+    // console.error(time);
     Data.getInitialMessages().push({
       id: newId,
       quote: userMessage,
@@ -17,6 +17,7 @@ const addMessage = () => {
       time,
     });
     $('#load-messages').html('');
+    $('#input-message').val('');
     Display.displayDummy();
   });
 };
@@ -37,10 +38,10 @@ const deleteMessage = () => {
 
 // Add message on "enter"
 const enterMessage = () => {
-  $('#input-message').on('keyup', (e) => {
-    if (e.key === '13') {
+  $('#input-message').on('keypress', (e) => {
+    if (e.which === 13) {
       e.preventDefault();
-      $('#submit-message').click();
+      $('#submit-message').trigger('click');
     }
   });
 };
