@@ -5,7 +5,7 @@ const renderNavBar = () => {
     <div class="fixed-top">
         <nav class="navbar">
             <a class="navbar-brand" href="#">
-            <img src="./images/logo.jpg" width="90" height="90" class="d-inline-block align-top" alt="" loading="lazy">
+            <img src="../images/logo.jpg" width="90" height="90" class="d-inline-block align-top" alt="" loading="lazy">
           </a>
             <form class="form-inline">
                 <div id="dropMenu"></div>
