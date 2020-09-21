@@ -26,5 +26,5 @@ An application that allows Lord of the Ring fans to select a character and send 
 * Javascript ES6
 
 ### Deployed here
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/73a0f7c7-7d0c-4381-8981-193605f1d4a5/deploy-status)](https://app.netlify.com/sites/chatty-delta/deploys)
+https://lotr-chatty.netlify.app/
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22bd2c7c-25c4-4a38-8b7e-d7ca687a4247/deploy-status)](https://app.netlify.com/sites/lotr-chatty/deploys)
