@@ -1,0 +1,61 @@
+$lightBG: url('/images/lightBG.jpg');
+$darkBG: url('/images/darkBG.jpg');
+$font-color-bright: #ffffff;
+$font-color-dark: #000000;
+
+body {
+  padding: 10% 3% 10% 3%;
+  text-align: center;
+  background-image: $lightBG;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover; 
+}
+
+// LIGHT MODE RULES
+.mode {
+  text-align: left;
+  font-weight: bold;
+  color: $font-color-dark;
+  padding-left: 10px;
+  .change {
+    cursor: pointer;
+    border: 1px solid $font-color-dark;
+    border-radius: 40%;
+    width: 65px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+    color: $font-color-dark;
+    margin-top: 10px;
+    display: inline-block;
+  }
+}
+
+// DARK MODE RULES
+.dark {
+  background-image: $darkBG;
+  .change {
+    cursor: pointer;
+    border: 1px solid $font-color-bright;
+    border-radius: 40%;
+    width: 65px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px;
+    color: $font-color-bright;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .mode {
+    text-align: left;
+    font-weight: bold;
+    color: $font-color-bright;
+  }
+  .card-body {
+    background-color: grey;
+    color: white;
+    border-radius: 40px;
+  }
+}
